@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: Outfit, 'sans-serif';
+}
+
+.flex-container {
+    display: flex;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card-container {
+    background-color: hsl(217, 54%, 11%);
+    padding: 5rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-card {
+    background-color: hsl(216, 50%, 16%);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.nft-img-container, .nft-img {
+    border-radius: inherit;
+}
+
+.nft-info-container {
+    margin-top: 2.5rem;
+}
+
+.nft-name {
+    color: hsl(0, 0%, 100%);
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.nft-description {
+    color: hsl(215, 51%, 70%);
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+    margin: 2rem 0;
+}
+
+.price-and-time-section {
+    font-size: 1.8rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ethereum-icon {
+    vertical-align: middle;
+}
+
+.price-value {
+    color: hsl(178, 100%, 50%);
+    vertical-align: middle;
+}
+
+.clock-icon, .time-left {
+    vertical-align: middle;
+}
+
+.time-left {
+    color:hsl(215, 51%, 70%)
+}
+
+hr {
+    margin: 1.7rem 0;
+    border: 1px solid hsl(215, 32%, 27%);
+}
+
+.creator-section {
+    color:hsl(215, 51%, 70%);
+    font-size: 1.8rem;
+    font-weight: 300;
+    align-items: center;
+}
+
+.avatar {
+    width: 5rem;
+    border-radius: 50%;
+    border: 2px solid hsl(0, 0%, 100%);
+}
+
+.creation-of {
+    margin-left: 1rem;
+}
+
+.creator-name {
+    color:hsl(0, 0%, 100%);
+}
+
+@media (min-width: 1440px) {
+    .card-container {
+        height: 100vh;
+    }
+
+    .nft-card {
+        width: 24vw;
+    }
+
+    .avatar {
+        width: 3.5rem;
+    }
+}
