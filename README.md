@@ -1,4 +1,4 @@
-# This repository contains my solutions to different challenges from the [Frontend Mentor](https://www.frontendmentor.io/home) website.
+# This repository contains my solutions to different challenges from the [__Frontend Mentor__](https://www.frontendmentor.io/home) website.
 <br>
 
 ## Challenges
