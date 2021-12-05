@@ -41,6 +41,10 @@ img {
     border-radius: inherit;
 }
 
+.nft-img-container {
+    position: relative;
+}
+
 .nft-info-container {
     margin-top: 2.5rem;
 }
@@ -49,6 +53,7 @@ img {
     color: hsl(0, 0%, 100%);
     font-size: 2.2rem;
     font-weight: 600;
+    display: inline;
 }
 
 .nft-description {
@@ -75,12 +80,17 @@ img {
     vertical-align: middle;
 }
 
+.time-section {
+    align-items: center;
+}
+
 .clock-icon, .time-left {
     vertical-align: middle;
 }
 
 .time-left {
-    color:hsl(215, 51%, 70%)
+    color:hsl(215, 51%, 70%);
+    margin-left: 0.7rem;
 }
 
 hr {
@@ -109,6 +119,33 @@ hr {
     color:hsl(0, 0%, 100%);
 }
 
+/* active states */
+.nft-name:hover,
+.creator-name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.nft-img-container:hover::after {
+    content: url('/nft-card-component/images/icon-view.svg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%, 0.5);
+    border-radius: inherit;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-img-container::after {
+    transform: all 1s;
+}
+
+/* responsive */
 @media (min-width: 1440px) {
     .card-container {
         height: 100vh;
