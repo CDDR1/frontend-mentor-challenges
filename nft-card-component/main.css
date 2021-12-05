@@ -127,7 +127,7 @@ hr {
 }
 
 .nft-img-container:hover::after {
-    content: url('/nft-card-component/images/icon-view.svg');
+    content: url('./images/icon-view.svg');
     position: absolute;
     top: 0;
     left: 0;
